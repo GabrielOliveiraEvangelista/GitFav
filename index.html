@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GitFav</title>
+    <link rel="shortcut icon" href="assets/Estrela.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="screenErro">
+        <p></p>
+      </div>
+      <img src="assets/Gitfav.svg" alt="Logo do site GitFav" />
+      <div id="inputOutput">
+        <label class="sr-only" for="addUser"
+          >Digite o nome do usuário que deseja favoritar</label
+        >
+        <input
+          type="text"
+          placeholder="Digite o nome do usuário que deseja favoritar"
+        />
+        <button id="addUser">
+          <img src="assets/star.svg" alt="Imagem de uma estrela" /><span
+            >Favoritar</span
+          >
+        </button>
+        <button id="removeList">
+          <img
+            src="assets/delete_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="Imagem de lixeira"
+          />Remover Lista
+        </button>
+      </div>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Usuário</th>
+            <th scope="col">Repositórios</th>
+            <th scope="col">Seguidores</th>
+            <th scope="col">Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr></tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
