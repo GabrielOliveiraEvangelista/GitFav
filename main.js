@@ -99,6 +99,10 @@ async function fetchUser(username) {
 
 // Evento de clique no botão "Adicionar"
 function handleAddClick() {
+  if (inputValue.value === "") {
+    showError("O campo de input está vazio. Digite um nome de usuário do GitHub.");
+    return; // Impede que a função continue se o input estiver vazio
+  }
   fetchUser(inputValue.value);
 }
 
